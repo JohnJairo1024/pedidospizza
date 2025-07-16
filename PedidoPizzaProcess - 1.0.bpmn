@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bonitaConnector="http://www.bonitasoft.org/studio/connector/definition/6.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di_1="http://www.omg.org/spec/DD/20100524/DI" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:model="http://www.omg.org/spec/BPMN/20100524/MODEL" xsi:schemaLocation="schemaLocation http://www.omg.org/spec/BPMN/20100524/MODEL schemas/BPMN20.xsd" exporter="BonitaSoft" exporterVersion="7.14.0" expressionLanguage="http://groovy.apache.org/" targetNamespace="http://bonitasoft.com/_7olkcFhoEfCUabqfQQ64Ww">
+  <model:collaboration id="_7olkcFhoEfCUabqfQQ64Ww">
+    <model:participant id="_GwsagGKfEfCgjocE8XX6-Q" name="Pedido Pizza" processRef="_7oy_0FhoEfCUabqfQQ64Ww"/>
+    <model:participant id="_GB7aAFhtEfCUabqfQQ64Ww" name="admin"/>
+  </model:collaboration>
+  <model:process id="_7oy_0FhoEfCUabqfQQ64Ww" name="Pedido Pizza">
+    <model:ioSpecification id="_Gw3ZoGKfEfCgjocE8XX6-Q">
+      <model:dataInput id="_Gw4AsGKfEfCgjocE8XX6-Q" itemSubjectRef="_B57jEGAyEfC5tOdupmxnAQ"/>
+      <model:dataInput id="_Gw6c8WKfEfCgjocE8XX6-Q" itemSubjectRef="_RJUeYGAyEfC5tOdupmxnAQ"/>
+      <model:dataInput id="_Gw6c92KfEfCgjocE8XX6-Q" itemSubjectRef="_TDJt0GAyEfC5tOdupmxnAQ"/>
+      <model:dataInput id="_Gw6c_WKfEfCgjocE8XX6-Q" itemSubjectRef="_YhtBMGAyEfC5tOdupmxnAQ"/>
+      <model:dataInput id="_Gw6dA2KfEfCgjocE8XX6-Q" itemSubjectRef="_Z-AnIGAyEfC5tOdupmxnAQ"/>
+      <model:dataInput id="_Gw6dCWKfEfCgjocE8XX6-Q" itemSubjectRef="_ccZVIGAyEfC5tOdupmxnAQ"/>
+      <model:dataInput id="_Gw6dD2KfEfCgjocE8XX6-Q" itemSubjectRef="_oY1R8GAyEfC5tOdupmxnAQ"/>
+      <model:inputSet id="_Gw4nwGKfEfCgjocE8XX6-Q">
+        <model:dataInputRefs>_Gw4AsGKfEfCgjocE8XX6-Q</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Gw6c8mKfEfCgjocE8XX6-Q">
+        <model:dataInputRefs>_Gw6c8WKfEfCgjocE8XX6-Q</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Gw6c-GKfEfCgjocE8XX6-Q">
+        <model:dataInputRefs>_Gw6c92KfEfCgjocE8XX6-Q</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Gw6c_mKfEfCgjocE8XX6-Q">
+        <model:dataInputRefs>_Gw6c_WKfEfCgjocE8XX6-Q</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Gw6dBGKfEfCgjocE8XX6-Q">
+        <model:dataInputRefs>_Gw6dA2KfEfCgjocE8XX6-Q</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Gw6dCmKfEfCgjocE8XX6-Q">
+        <model:dataInputRefs>_Gw6dCWKfEfCgjocE8XX6-Q</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Gw6dEGKfEfCgjocE8XX6-Q">
+        <model:dataInputRefs>_Gw6dD2KfEfCgjocE8XX6-Q</model:dataInputRefs>
+      </model:inputSet>
+      <model:outputSet id="_Gw6dFGKfEfCgjocE8XX6-Q"/>
+    </model:ioSpecification>
+    <model:dataObject id="DataObject_Gw2LgGKfEfCgjocE8XX6-Q_B57jEGAyEfC5tOdupmxnAQ" name="pedidoId" isCollection="false" itemSubjectRef="_B57jEGAyEfC5tOdupmxnAQ">
+      <model:documentation>pedidoId</model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_Gw6c8GKfEfCgjocE8XX6-Q_RJUeYGAyEfC5tOdupmxnAQ" name="clienteId" isCollection="false" itemSubjectRef="_RJUeYGAyEfC5tOdupmxnAQ">
+      <model:documentation>clienteId</model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_Gw6c9mKfEfCgjocE8XX6-Q_TDJt0GAyEfC5tOdupmxnAQ" name="direccionEntrega" isCollection="false" itemSubjectRef="_TDJt0GAyEfC5tOdupmxnAQ">
+      <model:documentation>direccionEntrega</model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_Gw6c_GKfEfCgjocE8XX6-Q_YhtBMGAyEfC5tOdupmxnAQ" name="items" isCollection="false" itemSubjectRef="_YhtBMGAyEfC5tOdupmxnAQ">
+      <model:documentation>items</model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_Gw6dAmKfEfCgjocE8XX6-Q_Z-AnIGAyEfC5tOdupmxnAQ" name="stockDisponible" isCollection="false" itemSubjectRef="_Z-AnIGAyEfC5tOdupmxnAQ">
+      <model:documentation>stockDisponible</model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_Gw6dCGKfEfCgjocE8XX6-Q_ccZVIGAyEfC5tOdupmxnAQ" name="stockValido" isCollection="false" itemSubjectRef="_ccZVIGAyEfC5tOdupmxnAQ">
+      <model:documentation>stockValido</model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_Gw6dDmKfEfCgjocE8XX6-Q_oY1R8GAyEfC5tOdupmxnAQ" name="inventario" isCollection="false" itemSubjectRef="_oY1R8GAyEfC5tOdupmxnAQ">
+      <model:documentation>inventario</model:documentation>
+    </model:dataObject>
+    <model:startEvent id="_7o34UFhoEfCUabqfQQ64Ww" name="Inicio del pedido"/>
+    <model:serviceTask id="_7o5tgFhoEfCUabqfQQ64Ww" name="Validar Stock" implementation="BonitaConnector" operationRef="Execscripting-groovy-script">
+      <model:documentation>La tarea Validar Stock debe verificar si los productos solicitados en un pedido están disponibles en el inventario</model:documentation>
+      <model:ioSpecification id="_GxE1AGKfEfCgjocE8XX6-Q">
+        <model:dataInput id="_GxE1AWKfEfCgjocE8XX6-Q" itemSubjectRef="scripting-groovy-scriptConnectorInput"/>
+        <model:dataOutput id="_GxFcEGKfEfCgjocE8XX6-Q" itemSubjectRef="scripting-groovy-scriptConnectorOutput"/>
+        <model:inputSet id="_GxE1AmKfEfCgjocE8XX6-Q">
+          <model:dataInputRefs>_GxE1AWKfEfCgjocE8XX6-Q</model:dataInputRefs>
+        </model:inputSet>
+        <model:outputSet id="_GxFcEWKfEfCgjocE8XX6-Q">
+          <model:dataOutputRefs>_GxFcEGKfEfCgjocE8XX6-Q</model:dataOutputRefs>
+        </model:outputSet>
+      </model:ioSpecification>
+      <model:dataInputAssociation>
+        <model:targetRef>_GxE1AWKfEfCgjocE8XX6-Q</model:targetRef>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_GxFcEmKfEfCgjocE8XX6-Q" evaluatesToTypeRef="java:java.lang.Object">// Inicializamos mapas&#xD;
+Map resultadoStock = [:]&#xD;
+boolean stockOk = true&#xD;
+&#xD;
+for (item in items) {&#xD;
+	def nombre = item.nombre&#xD;
+	def cantidad = item.cantidad&#xD;
+	def disponible = inventario[nombre] ?: 0&#xD;
+&#xD;
+	resultadoStock[nombre] = [&#xD;
+		solicitado: cantidad,&#xD;
+		disponible: disponible,&#xD;
+		suficiente: disponible >= cantidad&#xD;
+	]&#xD;
+&#xD;
+	if (disponible &lt; cantidad) {&#xD;
+		stockOk = false&#xD;
+	}&#xD;
+}&#xD;
+&#xD;
+// Asignar valores a las variables de salida&#xD;
+stockDisponible = resultadoStock&#xD;
+stockValido = stockOk&#xD;
+</model:from>
+          <model:to id="_GxFcE2KfEfCgjocE8XX6-Q">getDataInput('_GxE1AWKfEfCgjocE8XX6-Q')/bonitaConnector:fakeScriptExpression</model:to>
+        </model:assignment>
+      </model:dataInputAssociation>
+      <model:dataOutputAssociation>
+        <model:targetRef>_GxFcEGKfEfCgjocE8XX6-Q</model:targetRef>
+        <model:assignment>
+          <model:from id="_GxFcFGKfEfCgjocE8XX6-Q">getDataOutput('_GxE1AWKfEfCgjocE8XX6-Q')/bonitaConnector:result</model:from>
+        </model:assignment>
+      </model:dataOutputAssociation>
+    </model:serviceTask>
+    <model:receiveTask id="_7o-mAFhoEfCUabqfQQ64Ww" name="Esperar Confirmación Stock"/>
+    <model:userTask id="_7pBpUFhoEfCUabqfQQ64Ww" name="Confirmar Pedido">
+      <model:performer id="_GxH4UGKfEfCgjocE8XX6-Q">
+        <model:resourceRef>_GB7aAFhtEfCUabqfQQ64Ww</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:userTask id="_7pF6wFhoEfCUabqfQQ64Ww" name="Preparar Pizza">
+      <model:performer id="_GxH4UmKfEfCgjocE8XX6-Q">
+        <model:resourceRef>_GB7aAFhtEfCUabqfQQ64Ww</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:serviceTask id="_7pKzQFhoEfCUabqfQQ64Ww" name="Notificar Repartidor"/>
+    <model:receiveTask id="_7pNPgFhoEfCUabqfQQ64Ww" name="Esperar Confirmación Entrega"/>
+    <model:endEvent id="_7pQS0FhoEfCUabqfQQ64Ww" name="Fin del pedido"/>
+    <model:sequenceFlow id="_7pT9MFhoEfCUabqfQQ64Ww" name="" sourceRef="_7o34UFhoEfCUabqfQQ64Ww" targetRef="_7o5tgFhoEfCUabqfQQ64Ww"/>
+    <model:sequenceFlow id="_7pXAgFhoEfCUabqfQQ64Ww" name="" sourceRef="_7o5tgFhoEfCUabqfQQ64Ww" targetRef="_7o-mAFhoEfCUabqfQQ64Ww"/>
+    <model:sequenceFlow id="_7pZcwFhoEfCUabqfQQ64Ww" name="" sourceRef="_7o-mAFhoEfCUabqfQQ64Ww" targetRef="_7pBpUFhoEfCUabqfQQ64Ww"/>
+    <model:sequenceFlow id="_7pduMFhoEfCUabqfQQ64Ww" name="" sourceRef="_7pBpUFhoEfCUabqfQQ64Ww" targetRef="_7pF6wFhoEfCUabqfQQ64Ww"/>
+    <model:sequenceFlow id="_7phYkFhoEfCUabqfQQ64Ww" name="" sourceRef="_7pF6wFhoEfCUabqfQQ64Ww" targetRef="_7pKzQFhoEfCUabqfQQ64Ww"/>
+    <model:sequenceFlow id="_7pkb4FhoEfCUabqfQQ64Ww" name="" sourceRef="_7pKzQFhoEfCUabqfQQ64Ww" targetRef="_7pNPgFhoEfCUabqfQQ64Ww"/>
+    <model:sequenceFlow id="_7potUFhoEfCUabqfQQ64Ww" name="" sourceRef="_7pNPgFhoEfCUabqfQQ64Ww" targetRef="_7pQS0FhoEfCUabqfQQ64Ww"/>
+    <model:association id="_GxVTsGKfEfCgjocE8XX6-Q" sourceRef="_GxS3cGKfEfCgjocE8XX6-Q" targetRef="_7o5tgFhoEfCUabqfQQ64Ww"/>
+    <model:textAnnotation id="_GxS3cGKfEfCgjocE8XX6-Q">
+      <model:text>La tarea Validar Stock debe verificar si los productos solicitados en un pedido están disponibles en el inventario</model:text>
+    </model:textAnnotation>
+  </model:process>
+  <model:itemDefinition id="_B57jEGAyEfC5tOdupmxnAQ" structureRef="java:java.lang.String">
+    <model:documentation>pedidoId</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_RJUeYGAyEfC5tOdupmxnAQ" structureRef="java:java.lang.String">
+    <model:documentation>clienteId</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_TDJt0GAyEfC5tOdupmxnAQ" structureRef="java:java.lang.String">
+    <model:documentation>direccionEntrega</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_YhtBMGAyEfC5tOdupmxnAQ" structureRef="java:java.util.List">
+    <model:documentation>items</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_Z-AnIGAyEfC5tOdupmxnAQ" structureRef="java:java.util.Map">
+    <model:documentation>stockDisponible</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_ccZVIGAyEfC5tOdupmxnAQ" structureRef="java:java.lang.Boolean">
+    <model:documentation>stockValido</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_oY1R8GAyEfC5tOdupmxnAQ" structureRef="java:java.util.Map">
+    <model:documentation>inventario</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="scripting-groovy-scriptConnectorInput" structureRef="bonitaConnector:scripting-groovy-scriptInputType"/>
+  <model:message id="scripting-groovy-scriptConnectorMessageInput" itemRef="scripting-groovy-scriptConnectorInput"/>
+  <model:itemDefinition id="scripting-groovy-scriptConnectorOutput" structureRef="bonitaConnector:scripting-groovy-scriptOutputType"/>
+  <model:message id="scripting-groovy-scriptConnectorMessageOutput" itemRef="scripting-groovy-scriptConnectorOutput"/>
+  <model:interface id="scripting-groovy-script_Bonita_Connector_Interface" name="scripting-groovy-script_Bonita_Connector_Interface">
+    <model:operation id="Execscripting-groovy-script" name="Execscripting-groovy-script">
+      <model:inMessageRef>scripting-groovy-scriptConnectorMessageInput</model:inMessageRef>
+      <model:outMessageRef>scripting-groovy-scriptConnectorMessageOutput</model:outMessageRef>
+    </model:operation>
+  </model:interface>
+  <di:BPMNDiagram name="PedidoPizzaProcess">
+    <di:BPMNPlane id="plane__7olkcFhoEfCUabqfQQ64Ww" bpmnElement="_7olkcFhoEfCUabqfQQ64Ww">
+      <di:BPMNShape id="_7ozm5VhoEfCUabqfQQ64Ww" bpmnElement="_GwsagGKfEfCgjocE8XX6-Q" isHorizontal="true">
+        <dc:Bounds height="350.0" width="1450.0" x="0.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_7o34VFhoEfCUabqfQQ64Ww" bpmnElement="_7o34UFhoEfCUabqfQQ64Ww">
+        <dc:Bounds height="30.0" width="30.0" x="80.0" y="80.0"/>
+        <di:BPMNLabel id="_Gw_VcWKfEfCgjocE8XX6-Q" labelStyle="_Gw_VcGKfEfCgjocE8XX6-Q">
+          <dc:Bounds height="17.0" width="126.0" x="32.0" y="115.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_7o6UkFhoEfCUabqfQQ64Ww" bpmnElement="_7o5tgFhoEfCUabqfQQ64Ww">
+        <dc:Bounds height="58.0" width="116.0" x="230.0" y="80.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_7o_NEFhoEfCUabqfQQ64Ww" bpmnElement="_7o-mAFhoEfCUabqfQQ64Ww">
+        <dc:Bounds height="58.0" width="116.0" x="380.0" y="80.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_7pCQbFhoEfCUabqfQQ64Ww" bpmnElement="_7pBpUFhoEfCUabqfQQ64Ww">
+        <dc:Bounds height="58.0" width="116.0" x="530.0" y="80.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_7pHI4FhoEfCUabqfQQ64Ww" bpmnElement="_7pF6wFhoEfCUabqfQQ64Ww">
+        <dc:Bounds height="58.0" width="116.0" x="680.0" y="80.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_7pKzSVhoEfCUabqfQQ64Ww" bpmnElement="_7pKzQFhoEfCUabqfQQ64Ww">
+        <dc:Bounds height="58.0" width="116.0" x="830.0" y="80.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_7pN2kFhoEfCUabqfQQ64Ww" bpmnElement="_7pNPgFhoEfCUabqfQQ64Ww">
+        <dc:Bounds height="58.0" width="116.0" x="980.0" y="80.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_7pQ541hoEfCUabqfQQ64Ww" bpmnElement="_7pQS0FhoEfCUabqfQQ64Ww">
+        <dc:Bounds height="30.0" width="30.0" x="1034.0" y="209.0"/>
+        <di:BPMNLabel id="_GxJtgGKfEfCgjocE8XX6-Q" labelStyle="_Gw_VcGKfEfCgjocE8XX6-Q">
+          <dc:Bounds height="17.0" width="103.0" x="998.0" y="244.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_7pT9M1hoEfCUabqfQQ64Ww" bpmnElement="_7pT9MFhoEfCUabqfQQ64Ww">
+        <di_1:waypoint x="110.0" y="102.0"/>
+        <di_1:waypoint x="230.0" y="102.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_7pXnkFhoEfCUabqfQQ64Ww" bpmnElement="_7pXAgFhoEfCUabqfQQ64Ww">
+        <di_1:waypoint x="346.0" y="109.0"/>
+        <di_1:waypoint x="380.0" y="109.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_7paD0lhoEfCUabqfQQ64Ww" bpmnElement="_7pZcwFhoEfCUabqfQQ64Ww">
+        <di_1:waypoint x="496.0" y="109.0"/>
+        <di_1:waypoint x="530.0" y="109.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_7peVQFhoEfCUabqfQQ64Ww" bpmnElement="_7pduMFhoEfCUabqfQQ64Ww">
+        <di_1:waypoint x="646.0" y="109.0"/>
+        <di_1:waypoint x="680.0" y="109.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_7phYk1hoEfCUabqfQQ64Ww" bpmnElement="_7phYkFhoEfCUabqfQQ64Ww">
+        <di_1:waypoint x="796.0" y="109.0"/>
+        <di_1:waypoint x="830.0" y="109.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_7plC8FhoEfCUabqfQQ64Ww" bpmnElement="_7pkb4FhoEfCUabqfQQ64Ww">
+        <di_1:waypoint x="946.0" y="109.0"/>
+        <di_1:waypoint x="980.0" y="109.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_7potU1hoEfCUabqfQQ64Ww" bpmnElement="_7potUFhoEfCUabqfQQ64Ww">
+        <di_1:waypoint x="1043.0" y="138.0"/>
+        <di_1:waypoint x="1043.0" y="209.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNShape id="_LfyU8GAwEfC5tOdupmxnAQ" bpmnElement="_GxS3cGKfEfCgjocE8XX6-Q">
+        <dc:Bounds height="105.0" width="153.0" x="122.0" y="189.0"/>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_NOPa0GAwEfC5tOdupmxnAQ" bpmnElement="_GxVTsGKfEfCgjocE8XX6-Q">
+        <di_1:waypoint x="246.0" y="189.0"/>
+        <di_1:waypoint x="246.0" y="138.0"/>
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+    <di:BPMNLabelStyle id="_Gw_VcGKfEfCgjocE8XX6-Q">
+      <dc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name="Segoe UI" size="9.0"/>
+    </di:BPMNLabelStyle>
+  </di:BPMNDiagram>
+</model:definitions>
